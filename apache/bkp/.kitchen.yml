@@ -1,0 +1,31 @@
+---
+driver:
+  name: ssh
+  username: root
+  ssh_key: /root/.ssh/id_rsa
+  hostname: 192.168.56.104
+
+provisioner:
+  name: chef_zero
+  require_chef_omnibus: false
+  chef_client_path: chef-client
+
+verifier:
+  name: inspec
+
+platforms:
+
+  - name: rhel-8
+
+suites:
+  - name: default
+    run_list:
+      - recipe[apache::default]
+    verifier:
+      inspec_tests:
+        - apache/recipes
+    attributes:
+      chef_client:
+        config:
+          log_level: ":debug"
+          ssl_verify_mode: ":verify_none"

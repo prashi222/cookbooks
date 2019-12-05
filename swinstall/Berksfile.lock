@@ -1,0 +1,7 @@
+DEPENDENCIES
+  swinstall
+    path: .
+    metadata: true
+
+GRAPH
+  swinstall (0.1.0)

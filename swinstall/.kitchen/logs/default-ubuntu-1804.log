@@ -1,0 +1,161 @@
+I, [2019-12-05T14:56:34.131556 #126832]  INFO -- default-ubuntu-1804: -----> Converging <default-ubuntu-1804>...
+I, [2019-12-05T14:56:34.152485 #126832]  INFO -- default-ubuntu-1804: Preparing files for transfer
+I, [2019-12-05T14:56:34.155248 #126832]  INFO -- default-ubuntu-1804: Preparing dna.json
+I, [2019-12-05T14:56:34.169462 #126832]  INFO -- default-ubuntu-1804: Resolving cookbook dependencies with Berkshelf 7.0.8...
+I, [2019-12-05T14:56:47.439207 #126832]  INFO -- default-ubuntu-1804: Removing non-cookbook files before transfer
+I, [2019-12-05T14:56:47.543009 #126832]  INFO -- default-ubuntu-1804: Preparing validation.pem
+I, [2019-12-05T14:56:47.605276 #126832]  INFO -- default-ubuntu-1804: Preparing client.rb
+I, [2019-12-05T14:56:49.903768 #126832]  INFO -- default-ubuntu-1804: -----> Installing Chef install only if missing package
+I, [2019-12-05T14:56:49.906438 #126832]  INFO -- default-ubuntu-1804: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2019-12-05T14:56:49.907734 #126832]  INFO -- default-ubuntu-1804: Trying wget...
+I, [2019-12-05T14:56:52.741303 #126832]  INFO -- default-ubuntu-1804: Download complete.
+I, [2019-12-05T14:56:52.774384 #126832]  INFO -- default-ubuntu-1804: ubuntu 18.04 x86_64
+I, [2019-12-05T14:56:52.775816 #126832]  INFO -- default-ubuntu-1804: Getting information for chef stable  for ubuntu...
+I, [2019-12-05T14:56:52.778152 #126832]  INFO -- default-ubuntu-1804: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=18.04&m=x86_64
+I, [2019-12-05T14:56:52.779212 #126832]  INFO -- default-ubuntu-1804:   to file /tmp/install.sh.1695/metadata.txt
+I, [2019-12-05T14:56:52.783168 #126832]  INFO -- default-ubuntu-1804: trying wget...
+I, [2019-12-05T14:56:54.583328 #126832]  INFO -- default-ubuntu-1804: sha1	91e1fd5b428ded362625addb956af387db9b3d84
+I, [2019-12-05T14:56:54.596439 #126832]  INFO -- default-ubuntu-1804: sha256	8bc496f8de63b88543feb5364725082dfceb1e1ce62e45ec0c8c2edef70952e8
+I, [2019-12-05T14:56:54.596683 #126832]  INFO -- default-ubuntu-1804: url	https://packages.chef.io/files/stable/chef/15.5.17/ubuntu/18.04/chef_15.5.17-1_amd64.deb
+I, [2019-12-05T14:56:54.596853 #126832]  INFO -- default-ubuntu-1804: version	15.5.17
+I, [2019-12-05T14:56:54.609722 #126832]  INFO -- default-ubuntu-1804: downloaded metadata file looks valid...
+I, [2019-12-05T14:56:54.632186 #126832]  INFO -- default-ubuntu-1804: downloading https://packages.chef.io/files/stable/chef/15.5.17/ubuntu/18.04/chef_15.5.17-1_amd64.deb
+I, [2019-12-05T14:56:54.633652 #126832]  INFO -- default-ubuntu-1804:   to file /tmp/omnibus/cache/chef_15.5.17-1_amd64.deb
+I, [2019-12-05T14:56:54.643747 #126832]  INFO -- default-ubuntu-1804: trying wget...
+I, [2019-12-05T14:58:37.105077 #126832]  INFO -- default-ubuntu-1804: Comparing checksum with sha256sum...
+I, [2019-12-05T14:58:37.695706 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:58:37.696867 #126832]  INFO -- default-ubuntu-1804: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2019-12-05T14:58:37.697569 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:58:37.697713 #126832]  INFO -- default-ubuntu-1804: You are installing a package without a version pin.  If you are installing
+I, [2019-12-05T14:58:37.697847 #126832]  INFO -- default-ubuntu-1804: on production servers via an automated process this is DANGEROUS and you will
+I, [2019-12-05T14:58:37.697980 #126832]  INFO -- default-ubuntu-1804: be upgraded without warning on new releases, even to new major releases.
+I, [2019-12-05T14:58:37.698108 #126832]  INFO -- default-ubuntu-1804: Letting the version float is only appropriate in desktop, test, development or
+I, [2019-12-05T14:58:37.698242 #126832]  INFO -- default-ubuntu-1804: CI/CD environments.
+I, [2019-12-05T14:58:37.698472 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:58:37.698652 #126832]  INFO -- default-ubuntu-1804: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2019-12-05T14:58:37.698819 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:58:37.698984 #126832]  INFO -- default-ubuntu-1804: Installing chef 
+I, [2019-12-05T14:58:37.699271 #126832]  INFO -- default-ubuntu-1804: installing with dpkg...
+I, [2019-12-05T14:58:37.828140 #126832]  INFO -- default-ubuntu-1804: Selecting previously unselected package chef.
+I, [2019-12-05T14:58:38.121328 #126832]  INFO -- default-ubuntu-1804: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42600 files and directories currently installed.)
+I, [2019-12-05T14:58:38.123357 #126832]  INFO -- default-ubuntu-1804: Preparing to unpack .../cache/chef_15.5.17-1_amd64.deb ...
+I, [2019-12-05T14:58:38.136629 #126832]  INFO -- default-ubuntu-1804: Unpacking chef (15.5.17-1) ...
+I, [2019-12-05T14:58:55.283287 #126832]  INFO -- default-ubuntu-1804: Setting up chef (15.5.17-1) ...
+I, [2019-12-05T14:58:55.689050 #126832]  INFO -- default-ubuntu-1804: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2019-12-05T14:58:55.864021 #126832]  INFO -- default-ubuntu-1804: Transferring files to <default-ubuntu-1804>
+I, [2019-12-05T14:59:03.027624 #126832]  INFO -- default-ubuntu-1804: +---------------------------------------------+
+I, [2019-12-05T14:59:03.029137 #126832]  INFO -- default-ubuntu-1804: [32m✔[0m 2 product licenses accepted.
+I, [2019-12-05T14:59:03.033566 #126832]  INFO -- default-ubuntu-1804: +---------------------------------------------+
+I, [2019-12-05T14:59:03.695202 #126832]  INFO -- default-ubuntu-1804: Starting Chef Infra Client, version 15.5.17
+I, [2019-12-05T14:59:05.682451 #126832]  INFO -- default-ubuntu-1804: Creating a new client identity for default-ubuntu-1804 using the validator key.
+I, [2019-12-05T14:59:05.963712 #126832]  INFO -- default-ubuntu-1804: resolving cookbooks for run list: ["swinstall::default"]
+I, [2019-12-05T14:59:06.020363 #126832]  INFO -- default-ubuntu-1804: Synchronizing Cookbooks:
+I, [2019-12-05T14:59:06.054834 #126832]  INFO -- default-ubuntu-1804:   - swinstall (0.1.0)
+I, [2019-12-05T14:59:06.067992 #126832]  INFO -- default-ubuntu-1804: Installing Cookbook Gems:
+I, [2019-12-05T14:59:06.070856 #126832]  INFO -- default-ubuntu-1804: Compiling Cookbooks...
+I, [2019-12-05T14:59:06.085960 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:59:06.093588 #126832]  INFO -- default-ubuntu-1804: ================================================================================
+I, [2019-12-05T14:59:06.097710 #126832]  INFO -- default-ubuntu-1804: Recipe Compile Error in /tmp/kitchen/cache/cookbooks/swinstall/recipes/default.rb
+I, [2019-12-05T14:59:06.107440 #126832]  INFO -- default-ubuntu-1804: ================================================================================
+I, [2019-12-05T14:59:06.113611 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:59:06.125928 #126832]  INFO -- default-ubuntu-1804: Chef::Exceptions::ValidationFailed
+I, [2019-12-05T14:59:06.128014 #126832]  INFO -- default-ubuntu-1804: ----------------------------------
+I, [2019-12-05T14:59:06.140524 #126832]  INFO -- default-ubuntu-1804: Option action must be equal to one of: :nothing, :install, :upgrade, :remove, :purge, :reconfig, :lock, :unlock!  You passed :enable.
+I, [2019-12-05T14:59:06.141787 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:59:06.153488 #126832]  INFO -- default-ubuntu-1804: Cookbook Trace:
+I, [2019-12-05T14:59:06.154714 #126832]  INFO -- default-ubuntu-1804: ---------------
+I, [2019-12-05T14:59:06.172833 #126832]  INFO -- default-ubuntu-1804:   /tmp/kitchen/cache/cookbooks/swinstall/recipes/pkginstall.rb:12:in `block (2 levels) in from_file'
+I, [2019-12-05T14:59:06.174231 #126832]  INFO -- default-ubuntu-1804:   /tmp/kitchen/cache/cookbooks/swinstall/recipes/pkginstall.rb:11:in `block in from_file'
+I, [2019-12-05T14:59:06.178147 #126832]  INFO -- default-ubuntu-1804:   /tmp/kitchen/cache/cookbooks/swinstall/recipes/pkginstall.rb:10:in `each'
+I, [2019-12-05T14:59:06.180270 #126832]  INFO -- default-ubuntu-1804:   /tmp/kitchen/cache/cookbooks/swinstall/recipes/pkginstall.rb:10:in `from_file'
+I, [2019-12-05T14:59:06.180573 #126832]  INFO -- default-ubuntu-1804:   /tmp/kitchen/cache/cookbooks/swinstall/recipes/default.rb:6:in `from_file'
+I, [2019-12-05T14:59:06.180902 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:59:06.218481 #126832]  INFO -- default-ubuntu-1804: Relevant File Content:
+I, [2019-12-05T14:59:06.228354 #126832]  INFO -- default-ubuntu-1804: ----------------------
+I, [2019-12-05T14:59:06.237962 #126832]  INFO -- default-ubuntu-1804: /tmp/kitchen/cache/cookbooks/swinstall/recipes/pkginstall.rb:
+I, [2019-12-05T14:59:06.239329 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:59:06.252259 #126832]  INFO -- default-ubuntu-1804:   5:    #flush_cache [ :before ]
+I, [2019-12-05T14:59:06.253370 #126832]  INFO -- default-ubuntu-1804:   6:     #version [ '5.4.16-45', '0.17-67', '0.17-64', '2.1.5-1' ]
+I, [2019-12-05T14:59:06.264927 #126832]  INFO -- default-ubuntu-1804:   7:    #end
+I, [2019-12-05T14:59:06.271006 #126832]  INFO -- default-ubuntu-1804:   8:  #end
+I, [2019-12-05T14:59:06.271203 #126832]  INFO -- default-ubuntu-1804:   9:  
+I, [2019-12-05T14:59:06.271379 #126832]  INFO -- default-ubuntu-1804:  10:  ['php','telnet','ftp'].each do |p|
+I, [2019-12-05T14:59:06.271594 #126832]  INFO -- default-ubuntu-1804:  11:    package p do
+I, [2019-12-05T14:59:06.271793 #126832]  INFO -- default-ubuntu-1804:  12>>     action [ :install, :enable ]
+I, [2019-12-05T14:59:06.271953 #126832]  INFO -- default-ubuntu-1804:  13:    end
+I, [2019-12-05T14:59:06.272140 #126832]  INFO -- default-ubuntu-1804:  14:  end
+I, [2019-12-05T14:59:06.272368 #126832]  INFO -- default-ubuntu-1804:  15:  
+I, [2019-12-05T14:59:06.276135 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:59:06.336406 #126832]  INFO -- default-ubuntu-1804: System Info:
+I, [2019-12-05T14:59:06.343495 #126832]  INFO -- default-ubuntu-1804: ------------
+I, [2019-12-05T14:59:06.346120 #126832]  INFO -- default-ubuntu-1804: chef_version=15.5.17
+I, [2019-12-05T14:59:06.346383 #126832]  INFO -- default-ubuntu-1804: platform=ubuntu
+I, [2019-12-05T14:59:06.346558 #126832]  INFO -- default-ubuntu-1804: platform_version=18.04
+I, [2019-12-05T14:59:06.346858 #126832]  INFO -- default-ubuntu-1804: ruby=ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+I, [2019-12-05T14:59:06.347070 #126832]  INFO -- default-ubuntu-1804: program_name=/opt/chef/bin/chef-client
+I, [2019-12-05T14:59:06.347268 #126832]  INFO -- default-ubuntu-1804: executable=/opt/chef/bin/chef-client
+I, [2019-12-05T14:59:06.347477 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:59:06.347716 #126832]  INFO -- default-ubuntu-1804: 
+I, [2019-12-05T14:59:06.404167 #126832]  INFO -- default-ubuntu-1804: Running handlers:
+I, [2019-12-05T14:59:06.409934 #126832]  INFO -- default-ubuntu-1804: [2019-12-05T09:29:06+00:00] ERROR: Running exception handlers
+I, [2019-12-05T14:59:06.419422 #126832]  INFO -- default-ubuntu-1804: Running handlers complete
+I, [2019-12-05T14:59:06.421795 #126832]  INFO -- default-ubuntu-1804: [2019-12-05T09:29:06+00:00] ERROR: Exception handlers complete
+I, [2019-12-05T14:59:06.433008 #126832]  INFO -- default-ubuntu-1804: Chef Infra Client failed. 0 resources updated in 02 seconds
+I, [2019-12-05T14:59:06.437746 #126832]  INFO -- default-ubuntu-1804: [2019-12-05T09:29:06+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2019-12-05T14:59:06.443672 #126832]  INFO -- default-ubuntu-1804: [2019-12-05T09:29:06+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2019-12-05T14:59:06.446861 #126832]  INFO -- default-ubuntu-1804: [2019-12-05T09:29:06+00:00] FATAL: Chef::Exceptions::ValidationFailed: Option action must be equal to one of: :nothing, :install, :upgrade, :remove, :purge, :reconfig, :lock, :unlock!  You passed :enable.
+E, [2019-12-05T14:59:06.501084 #126832] ERROR -- default-ubuntu-1804: Converge failed on instance <default-ubuntu-1804>.
+E, [2019-12-05T14:59:06.501510 #126832] ERROR -- default-ubuntu-1804: ------Exception-------
+E, [2019-12-05T14:59:06.501684 #126832] ERROR -- default-ubuntu-1804: Class: Kitchen::ActionFailed
+E, [2019-12-05T14:59:06.501840 #126832] ERROR -- default-ubuntu-1804: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2019-12-05T14:59:06.502014 #126832] ERROR -- default-ubuntu-1804: ----------------------
+E, [2019-12-05T14:59:06.502180 #126832] ERROR -- default-ubuntu-1804: ------Backtrace-------
+E, [2019-12-05T14:59:06.502349 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-12-05T14:59:06.502503 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/provisioner/base.rb:94:in `call'
+E, [2019-12-05T14:59:06.502656 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:409:in `block in converge_action'
+E, [2019-12-05T14:59:06.502813 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:552:in `synchronize_or_call'
+E, [2019-12-05T14:59:06.502970 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:514:in `block in action'
+E, [2019-12-05T14:59:06.503278 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-12-05T14:59:06.503454 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:513:in `action'
+E, [2019-12-05T14:59:06.503620 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-12-05T14:59:06.503782 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-12-05T14:59:06.503955 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-12-05T14:59:06.504116 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-12-05T14:59:06.504281 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:380:in `each'
+E, [2019-12-05T14:59:06.504448 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-12-05T14:59:06.504685 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-12-05T14:59:06.504844 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/command.rb:198:in `public_send'
+E, [2019-12-05T14:59:06.504993 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/command.rb:198:in `run_action_in_thread'
+E, [2019-12-05T14:59:06.505123 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-12-05T14:59:06.505343 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2019-12-05T14:59:06.505487 #126832] ERROR -- default-ubuntu-1804: ----End Backtrace-----
+E, [2019-12-05T14:59:06.505616 #126832] ERROR -- default-ubuntu-1804: ---Nested Exception---
+E, [2019-12-05T14:59:06.505742 #126832] ERROR -- default-ubuntu-1804: Class: Kitchen::Transport::SshFailed
+E, [2019-12-05T14:59:06.505868 #126832] ERROR -- default-ubuntu-1804: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2019-12-05T14:59:06.506013 #126832] ERROR -- default-ubuntu-1804: ----------------------
+E, [2019-12-05T14:59:06.506146 #126832] ERROR -- default-ubuntu-1804: ------Backtrace-------
+E, [2019-12-05T14:59:06.506301 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-12-05T14:59:06.506476 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/provisioner/base.rb:94:in `call'
+E, [2019-12-05T14:59:06.506641 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:409:in `block in converge_action'
+E, [2019-12-05T14:59:06.506802 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:552:in `synchronize_or_call'
+E, [2019-12-05T14:59:06.506965 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:514:in `block in action'
+E, [2019-12-05T14:59:06.507127 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-12-05T14:59:06.507294 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:513:in `action'
+E, [2019-12-05T14:59:06.507450 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-12-05T14:59:06.507617 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-12-05T14:59:06.507773 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-12-05T14:59:06.507932 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-12-05T14:59:06.508130 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:380:in `each'
+E, [2019-12-05T14:59:06.508329 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-12-05T14:59:06.508485 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-12-05T14:59:06.508658 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/command.rb:198:in `public_send'
+E, [2019-12-05T14:59:06.508824 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/command.rb:198:in `run_action_in_thread'
+E, [2019-12-05T14:59:06.509010 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.3/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-12-05T14:59:06.509159 #126832] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2019-12-05T14:59:06.509305 #126832] ERROR -- default-ubuntu-1804: ----End Backtrace-----
